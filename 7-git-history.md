@@ -1,6 +1,6 @@
 ---
-title: Modifier l'historique
-category: Git
+Title: Modifier l'historique
+Category: Git
 ---
 
 ## Modifier le message du dernier commit

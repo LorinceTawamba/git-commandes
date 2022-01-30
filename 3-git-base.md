@@ -1,6 +1,6 @@
 ---
-title: Principales commandes
-category: Git
+Title: Principales commandes
+Category: Git
 ---
 
 ## Status des fichiers

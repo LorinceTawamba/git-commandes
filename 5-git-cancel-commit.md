@@ -1,6 +1,6 @@
 ---
-title: Annuler commit
-category: Git
+Title: Annuler commit
+Category: Git
 ---
 
 ## Annuler commits (soft)

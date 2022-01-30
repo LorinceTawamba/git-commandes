@@ -1,6 +1,6 @@
 ---
-title: Installation projet
-category: Git
+Title: Installation projet
+Category: Git
 ---
 
 

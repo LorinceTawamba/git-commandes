@@ -1,6 +1,6 @@
 ---
-title: Tag
-category: Git
+Title: Tag
+Category: Git
 ---
 
 ## Retourne la liste des tags disponible

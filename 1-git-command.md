@@ -1,6 +1,6 @@
 ---
-title: Git config
-category: Git
+Title: Git config
+Category: Git
 ---
 
 ## Rappel

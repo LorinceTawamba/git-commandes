@@ -1,6 +1,6 @@
 ---
-title: Créer une release
-category: Git
+Title: Créer une release
+Category: Git
 ---
 
 Créer une nouvelle branche `release/aaaammyy_xx`

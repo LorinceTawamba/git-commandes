@@ -1,6 +1,6 @@
 ---
-title: Diff
-category: Git
+Title: Diff
+Category: Git
 ---
 
 ```shell

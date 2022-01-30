@@ -1,6 +1,6 @@
 ---
-title: Log
-category: Git
+Title: Log
+Category: Git
 ---
 
 ```shell
