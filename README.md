@@ -1,12 +1,39 @@
 # GIT - COMMANDES
 
-Git les commandes principales pour mieux travailler.   
+Les commandes git principales pour mieux travailler. 
 
+# Introduction 
 
-## Architecture
+## Rappel
 
-![App Screenshot](https://github.com/lorince-tawamba/satic-sysgesres/blob/main/Architecture.jpg?text=App+Screenshot+Here)
+**Ne pas oublier : l'aide en ligne de commande.**
 
+```shell
+git help config
+git help push
+git help pull
+git help branch
+```  
+## Configuration
+
+```shell
+# Identity Name
+git config --global user.name "aquelito"
+
+# Identity Email
+git config --global user.email "axel@aquelito.fr"
+
+# Editor Tool
+git config --global core.editor subl
+
+# Diff Tool
+git config --global merge.tool filemerge
+```
+## Liste des globals
+
+```shell
+git config --list
+```
 # Authors
 
 * **Lorince TAWAMBA** _alias_ [@lorincetawamba](https://github.com/LorinceTawamba)
