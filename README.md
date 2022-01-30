@@ -18,10 +18,10 @@ git help branch
 
 ```shell
 # Identity Name
-git config --global user.name "aquelito"
+git config --global user.name "lorince"
 
 # Identity Email
-git config --global user.email "axel@aquelito.fr"
+git config --global user.email "lorince@entreprise.com"
 
 # Editor Tool
 git config --global core.editor subl
@@ -36,7 +36,7 @@ git config --list
 ```
 # Authors
 
-* **Lorince TAWAMBA** _alias_ [@lorincetawamba](https://github.com/LorinceTawamba)
+* **Lorince TAWAMBA** _alias_ [@LorinceTawamba](https://github.com/LorinceTawamba)
 
 Read the list of [contributors](https://github.com/lorince-tawamba/gescom/contributors) to see who helped with the project ! 
 
