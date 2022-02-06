@@ -23,13 +23,13 @@ git config --global user.name "LorinceTawamba"
 # Email d'identification
 git config --global user.email "lorince.tawamba@gmail.com"
 
-# Editor Tool
+# Outil d'édition
 git config --global core.editor subl
 
-# Diff Tool
+# Outil de difference 
 git config --global merge.tool filemerge
 ```
-## Liste des globals
+## Liste des configurations globales
 
 ```shell
 git config --list
