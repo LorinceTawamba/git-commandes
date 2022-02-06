@@ -14,7 +14,7 @@ git help push
 git help pull
 git help branch
 ```  
-## Configuration
+## Configurations
 
 ```shell
 # Nom d'identification 
@@ -29,7 +29,7 @@ git config --global core.editor subl
 # Outil de difference 
 git config --global merge.tool filemerge
 ```
-## Liste des configurations globales
+## Lister les configurations globales
 
 ```shell
 git config --list
