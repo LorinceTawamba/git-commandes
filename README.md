@@ -2,7 +2,7 @@
 
 Les commandes git pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
 
-# Git config  
+# Les configurations globales   
 
 ## Rappel
 
