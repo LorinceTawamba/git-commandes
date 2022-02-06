@@ -17,11 +17,11 @@ git help branch
 ## Configuration
 
 ```shell
-# Le nom d'identification 
+# Nom d'identification 
 git config --global user.name "LorinceTawamba"
 
-# Identity Email
-git config --global user.email "lorince@entreprise.com"
+# Email d'identification
+git config --global user.email "lorince.tawamba@gmail.com"
 
 # Editor Tool
 git config --global core.editor subl
