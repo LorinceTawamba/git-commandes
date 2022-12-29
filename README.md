@@ -44,44 +44,45 @@ cd chemin/vers/mon_dossier
 echo "# MON_PROJET" >> README.md
 git init
 git add README.md
-git commit -m "Initial commit"
-git remote add origin ....git
-git push -u origin master
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LorinceTawamba/git-commandes.git
+git push -u origin main
 ```
 
 ## Récuperer le repo sur Github
 
 ```shell
-git clone ....git chemin/vers/mon_dossier
+git clone https://github.com/LorinceTawamba/git-commandes.git chemin/vers/mon_dossier
 ```
 
 Mon repo est composé d'au moins deux branch.
 
-develop : dédié au développement et résolution de bug.
+dev : dédié au développement et résolution de bug.
 master : reflète le code en production. Personne ne doit travailler directement sur cette branch.
 
-Pour récupérer votre branch develop
+Pour récupérer votre branch dev
 
 ```shell
 git branch -a
-git checkout origin/develop
-git checkout -b develop origin/develop
+git checkout origin/dev
+git checkout -b dev origin/dev
 git branch
 ```
 
-## Developpement : Branch develop
+## Developpement : Branch dev
 
 ## Prod : Branch Master
 
 ```shell
 # On se met sur la branche master
 git checkout master
-# On merge la branche develop
-git merge develop
+# On merge la branche dev
+git merge dev
 # Pour pousser les changements
 git push origin master
-# Penser à revenir sur develop
-git checkout develop
+# Penser à revenir sur dev
+git checkout dev
 ```
 
 # Principales commandes
