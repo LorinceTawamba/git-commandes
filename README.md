@@ -37,8 +37,6 @@ git config --list
 
 # Installation projet
 
-## Initialiser un projet
-
 ```shell
 cd chemin/vers/mon_dossier
 echo "# MON_PROJET" >> README.md
