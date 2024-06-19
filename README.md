@@ -140,12 +140,13 @@ git commit -m "initial commit"
 
 ```shell
 git stash
-
+```
 
 ## Restaurer les changements sur la branche
 
 ```shell
-git stash apply 
+git stash apply
+```
 
 ## Commit suivant
 
