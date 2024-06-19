@@ -1,6 +1,6 @@
-# GIT - COMMANDES
+# Git - Les commandes usuelles
 
-Les commandes git pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
+Les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
 
 # Les configurations globales   
 
@@ -135,6 +135,17 @@ git switch nom_de_ma_branch
 git add .
 git commit -m "initial commit"
 ```
+
+## Ignorer les changements sur la branche
+
+```shell
+git stash
+
+
+## Restaurer les changements sur la branche
+
+```shell
+git stash apply 
 
 ## Commit suivant
 
