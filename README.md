@@ -3,8 +3,7 @@
 ## Table de matières 
 
 - [Introduction](#Introduction) 
-- [Documentation de refference](#Documentation-de-refference)
-- [Contributors](#contributors)
+- [Les configurations globales](#Les-configurations-globales)
 
 ## Introduction 
 
