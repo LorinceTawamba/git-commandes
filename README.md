@@ -1,19 +1,30 @@
-# Git - Les commandes usuelles
+# Git - Les commandes usuelles 
 
-Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
+## Table de matières 
 
-# Les configurations globales   
+- [Introduction](#Introduction) 
+- [Documentation de refference](#Documentation-de-refference)
+- [Contributors](#contributors)
 
-## Rappel
+## Introduction 
 
-**Ne pas oublier : l'aide en ligne de commande.**
+Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
+
+## Les configurations globales  
+
+### Rappel 
+
+**Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques.** 
+
+**Exemple :**
 
 ```shell
 git help config
 git help push
 git help pull
 git help branch
-```  
+``` 
+  
 ## Configurations
 
 ```shell
