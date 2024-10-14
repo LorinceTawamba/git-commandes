@@ -1,6 +1,6 @@
 # Git - Les commandes usuelles
 
-Les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
+Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources. 
 
 # Les configurations globales   
 
