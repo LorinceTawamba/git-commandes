@@ -4,6 +4,7 @@
 
 - [Introduction](#Introduction) 
 - [Aide sur une commande](#Aide-sur-une-commande)
+- [Configurations](#Configurations)
 
 ## Introduction 
 
@@ -11,7 +12,7 @@ Voici les commandes git les plus usuelles pour optimiser le travail collaboratif
 
 ## Aide sur une commande  
 
-**Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques.** 
+Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques. 
 
 **Exemple :**
 
@@ -22,7 +23,9 @@ git help pull
 git help branch
 ``` 
   
-## Configurations
+## Configurations 
+
+Voici les commandes à utiliser pour effectuer les configuration de base de git sur votre machine.  
 
 ```shell
 # Nom d'identification 
@@ -35,13 +38,12 @@ git config --global user.email "lorince.tawamba@gmail.com"
 git config --global core.editor subl
 
 # Outil de difference 
-git config --global merge.tool filemerge
-```
-## Lister les configurations globales
+git config --global merge.tool filemerge 
 
-```shell
+# Lister les configurations globales existaantes 
 git config --list
 ```
+
 
 # Installation projet
 
