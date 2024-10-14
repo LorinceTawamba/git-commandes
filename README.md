@@ -3,15 +3,13 @@
 ## Table de matières 
 
 - [Introduction](#Introduction) 
-- [Les configurations globales](#Les-configurations-globales)
+- [Aide sur une commande](#Aide-sur-une-commande)
 
 ## Introduction 
 
 Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
 
-## Les configurations globales  
-
-### Rappel 
+## Aide sur une commande  
 
 **Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques.** 
 
