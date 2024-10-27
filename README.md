@@ -8,8 +8,7 @@
 - [Installation d'un projet en local](#Installation-dun-projet-en-local)
 - [Récuperer en local le repository sur Github](#Récuperer-en-local-le-repository-sur-Github) 
 - [Log](#Log) 
-- [Créer une noouvelle branche](#Créer-une-noouvelle-
-branche)
+- [Gestion des branches](#Gestion-des-branches)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 
 ## Introduction 
@@ -120,25 +119,31 @@ git log --oneline --graph --decorate
 git log --oneline --graph --decorate nom_du_fichier
 ```
 
-## Créer une noouvelle branche
+## Gestion des branches 
+
+- **Créer une nouvelle branche**
 
 ```shell
-# Deux lignes: créer et basculer sur la nouvelle branch
-git branch feature/nom_de_ma_branch_nouvelle
-git checkout feature/nom_de_ma_branch_nouvelle
-
-ou 
-
-git branch bug/nom_de_ma_branch_nouvelle
-git checkout bug/nom_de_ma_branch_nouvelle
-
-# Une seule ligne: créer et basculer
-git checkout -b feature/nom_de_ma_branch_nouvelle 
-
-ou 
-
-git checkout -b bug/nom_de_ma_branch_nouvelle
+git branch nom_de_ma_branch_nouvelle
 ```
+
+- **Se déplacer vers une branche** 
+
+```shell
+# Pour une branche existante 
+git checkout nom_de_ma_branche
+
+# Pour une branche non existante (création et déplacement)
+git checkout -b nom_de_ma_branch_nouvelle
+```
+
+- **Lister toutes les branches disponibles dans le repository** 
+
+```shell
+git branch 
+```
+
+
 
 
 # A REORGANISER ICI 
