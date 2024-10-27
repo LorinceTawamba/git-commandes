@@ -3,7 +3,7 @@
 ## Table de matières 
 
 - [Introduction](#Introduction) 
-- [Avoir de l'aide sur une commande](#Avoir-de-l--'-aide-sur-une-commande)
+- [Avoir de l'aide sur une commande](#Avoir-de-l--aide-sur-une-commande)
 - [Configurations](#Configurations)
 
 ## Introduction 
