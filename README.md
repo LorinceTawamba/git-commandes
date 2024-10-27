@@ -52,9 +52,9 @@ git config --list
 
 ```shell
 cd chemin/vers/mon_dossier
-echo "# MON_PROJET" >> README.md
+echo "# MON_PROJET" >> readme.md
 git init
-git add README.md
+git add readme.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/LorinceTawamba/git-commandes.git
