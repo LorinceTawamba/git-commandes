@@ -40,7 +40,10 @@ git config --global core.editor subl
 # Outil de difference 
 git config --global merge.tool filemerge 
 
-# Lister les configurations globales existaantes 
+# Branche par defaut  
+git config --global init.defaultBranch main
+
+# Lister les configurations globales existantes 
 git config --list
 ```
 
