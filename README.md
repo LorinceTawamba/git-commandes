@@ -6,6 +6,8 @@
 - [Avoir de l'aide sur une commande](#Avoir-de-laide-sur-une-commande)
 - [Faire les configurations de base](#Faire-les-configurations-de-base)
 - [Installation d'un projet en local](#Installation-dun-projet-en-local)
+- [Récuperer en local le repository sur Github](#Récuperer-en-local-le-repository-sur-Github) 
+- [Log](#Log)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 
 ## Introduction 
@@ -94,13 +96,30 @@ git clone https://github.com/LorinceTawamba/git-commandes.git chemin/vers/mon_do
 >- **bug** : dédié aux correction de bug.
 >- **master** : reflète le code en production. Personne ne doit travailler directement sur cette branch.
 
+## Log
+
+```shell
+# Classique
+git log
+
+# Affiche X derniers commits
+git log -n X
+
+# Affiche les commits concernant un dossier
+git log --oneline -- chemin/vers/mon_dossier
+
+# Affiche un ensemble de commits par date
+git log --since=date --until=date
+
+# Représentation de l’historique à partir de HEAD (commit / branch)
+git log --oneline --graph --decorate
+
+# Représentation de l’historique à partir d'un fichier (commit / branch)
+git log --oneline --graph --decorate nom_du_fichier
+```
+
+
 # A REORGANISER ICI 
-
-
-
-
-
-
 
 Pour récupérer votre branch dev
 
@@ -425,27 +444,6 @@ Dans le cas, ou les commits modifier sont déjà présent sur la branch distante
 git push --force origin NOM_DE_MA_BRANCH
 ```
 
-# Log
-
-```shell
-# Classique
-git log
-
-# Affiche X derniers commits
-git log -n X
-
-# Affiche les commits concernant un dossier
-git log --oneline -- chemin/vers/mon_dossier
-
-# Affiche un ensemble de commits par date
-git log --since=date --until=date
-
-# Représentation de l’historique à partir de HEAD (commit / branch)
-git log --oneline --graph --decorate
-
-# Représentation de l’historique à partir d'un fichier (commit / branch)
-git log --oneline --graph --decorate nom_du_fichier
-```
 
 # Tag
 
