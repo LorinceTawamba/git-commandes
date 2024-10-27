@@ -3,7 +3,7 @@
 ## Table de matières 
 
 - [Introduction](#Introduction) 
-- [Avoir de l'aide sur une commande](#Avoir-de-l--aide-sur-une-commande)
+- [Avoir de l'aide sur une commande](#Avoir-de-laide-sur-une-commande)
 - [Configurations](#Configurations)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 - [This'll  be a _Helpful_ Section About the Greek Letter Θ](#thisll--be-a-helpful-section-about-the-greek-letter-Θ)
