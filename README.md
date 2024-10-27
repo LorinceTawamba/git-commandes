@@ -3,16 +3,32 @@
 ## Table de matières 
 
 - [Introduction](#Introduction) 
-- [Aide sur une commande](#Aide-sur-une-commande)
+- [Avoir de l'aide sur une commande](#Avoir-de-l--'-aide-sur-une-commande)
 - [Configurations](#Configurations)
 
 ## Introduction 
 
 Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
 
-## Aide sur une commande  
+## Avoir de l'aide sur une commande  
 
-Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques. 
+- **Syntaxe :**
+
+```shell
+git help nom-de-votre-commande
+```
+
+- **Exemple :** 
+
+```shell
+git help config
+git help push
+git help pull
+git help branch
+```
+
+
+Pour avoir de l'aide sur une commande Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques. 
 
 **Exemple :**
 
@@ -147,6 +163,12 @@ git switch nom_de_ma_branch
 ```shell
 git add .
 git commit -m "initial commit"
+```
+
+Ou 
+
+```shell
+git commit -am "initial commit"
 ```
 
 ## Ignorer les changements sur la branche
