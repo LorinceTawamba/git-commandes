@@ -5,7 +5,7 @@
 - [Introduction](#Introduction) 
 - [Avoir de l'aide sur une commande](#Avoir-de-l--aide-sur-une-commande)
 - [Configurations](#Configurations)
-- [C'est un message test](#C-'-est-un-message-test)
+- [Un message test](#Un-message-test)
 
 
 C'est un message test
@@ -464,7 +464,7 @@ git tag -a v1.0 -m "Mon commentaire pour la version 1.0" md5_commit
 git tag -v nom_de_l_étiquette
 ```
 
-## C'est un message test
+## Un message test
 Cette partie est une message de test.
 
 ## Pousser les tags sur la branch distante
