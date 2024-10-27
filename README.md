@@ -6,14 +6,10 @@
 - [Avoir de l'aide sur une commande](#Avoir-de-laide-sur-une-commande)
 - [Configurations](#Configurations)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
-- [This'll  be a _Helpful_ Section About the Greek Letter Θ](#thisll--be-a-helpful-section-about-the-greek-letter-Θ)
-
-
-C'est un message test
 
 ## Introduction 
 
-Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
+Pour assurer un bon suivi des versions de votre codes source; Une bonne optimisation Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
 
 ## Avoir de l'aide sur une commande  
 
