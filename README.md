@@ -5,7 +5,8 @@
 - [Introduction](#Introduction) 
 - [Avoir de l'aide sur une commande](#Avoir-de-l--aide-sur-une-commande)
 - [Configurations](#Configurations)
-- [Un message test](#Un-message-test)
+- [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
+- [This'll  be a _Helpful_ Section About the Greek Letter Θ](#thisll--be-a-helpful-section-about-the-greek-letter-Θ)
 
 
 C'est un message test
@@ -466,6 +467,79 @@ git tag -v nom_de_l_étiquette
 
 ## Un message test
 Cette partie est une message de test.
+
+## This'll  be a _Helpful_ Section About the Greek Letter Θ!
+A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
+
+# Concepts de base de Markdown 
+
+## Titres
+
+# This is level 1 (article title)
+## This is level 2
+### This is level 3
+#### This is level 4
+##### This is level 5
+
+## Texte de base
+
+   This text is **bold**.
+   This text is *italic*.
+   This text is both ***bold and italic***.
+
+## Listes numérotées et listes à puces
+
+1. This is step 1.
+1. This is the next step.
+1. This is yet another step, the third.
+
+* First item in an unordered list.
+* Another item.
+* Here we go again.
+
+## This is the fourth step.
+
+   >[!NOTE]
+   >
+   >This is note text.
+
+## Tableaux 
+
+| Header | Another header | Yet another header |
+|--- |--- |--- |
+| row 1 | column 2 | column 3 |
+| row 2 | row 2 column 2 | row 2 column 3 |
+
+## Blocs de notes
+
+Vous pouvez choisir parmi ces types de blocs-notes afin d’attirer l’attention sur un contenu spécifique :
+
+[!NOTE]
+[!TIP]
+[!IMPORTANT]
+[!CAUTION]
+[!WARNING]
+[!ADMINISTRATION]
+[!AVAILABILITY]
+[!PREREQUISITES]
+[!ERROR]
+[!ADMINISTRATION]
+[!INFO]
+[!SUCCESS]
+
+**Exemple:**
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard TIP.
+
+>[!IMPORTANT]
+>
+>This is an IMPORTANT note.
 
 ## Pousser les tags sur la branch distante
 
