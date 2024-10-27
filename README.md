@@ -5,6 +5,7 @@
 - [Introduction](#Introduction) 
 - [Avoir de l'aide sur une commande](#Avoir-de-laide-sur-une-commande)
 - [Faire les configurations de base](#Faire-les-configurations-de-base)
+- [Installation d'un projet en local](#Installation-dun-projet-en-local)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 
 ## Introduction 
@@ -52,20 +53,37 @@ git config --global init.defaultBranch main
 git config --list
 ```
 
-# A REORGANISER ICI 
-
-# Installation projet
+## Installation d'un projet en local 
 
 ```shell
-cd chemin/vers/mon_dossier
-echo "# MON_PROJET" >> readme.md
-git init
-git add readme.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/LorinceTawamba/git-commandes.git
+# Se déplacer vers le dossier du projet 
+cd chemin/vers/mon_dossier/du_projet 
+
+# Initialiser le dossier du projet au suivi de version par git  
+git init 
+
+# Créer un fichier de suivi git   
+echo "# NOM DE MON PROJET" >> readme.md
+
+# Ajouter le fichier dans le suivi git    
+git add readme.md 
+
+# Sauvegarder le suivi git du fichier     
+git commit -m "first commit" 
+
+# Ajouter le fichier dans le suivi git + Sauvegarder le suivi git du fichier     
+git commit -am "first commit" 
+
+# Configurer le repository local avec un ripository distant      
+git remote add origin https://github.com/LorinceTawamba/git-commandes.git 
+
+# Transférer les sauvegardes du repository local vers le repository distant     
 git push -u origin main
 ```
+
+# A REORGANISER ICI 
+
+
 
 ## Récuperer le repo sur Github
 
