@@ -537,6 +537,42 @@ Vous pouvez choisir parmi ces types de blocs-notes afin d’attirer l’attentio
 >
 >This is an IMPORTANT note.
 
+>[!CAUTION]
+>
+>This is an CAUTION note.
+
+>[!WARNING] 
+>
+>This is an WARNING note.
+
+>[!ADMINISTRATION]
+>
+>This is an ADMINISTRATION note.
+
+>[!AVAILABILITY]
+>
+>This is an AVAILABILITY note.
+
+>[!PREREQUISITES]
+>
+>This is an PREREQUISITES note.
+
+>[!ERROR]
+>
+>This is an ERROR note.
+
+>[!ADMINISTRATION]
+>
+>This is an ADMINISTRATION note.
+
+>[!INFO]
+>
+>This is an INFO note.
+
+>[!SUCCESS]
+>
+>This is an SUCCESS note.
+
 ## Pousser les tags sur la branch distante
 
 ```shell
