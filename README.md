@@ -89,9 +89,10 @@ git clone https://github.com/LorinceTawamba/git-commandes.git chemin/vers/mon_do
 
 >[!NOTE]
 >
->Mon repo est composé d'au moins deux branch.
->- dev : dédié au développement et résolution de bug.
->- master : reflète le code en production. Personne ne doit travailler directement sur cette branch.
+>Mon repository est composé d'au moins deux branch.
+>- **feature** : dédié au développement de nouvelle fonctionalités
+>- **bug** : dédié aux correction de bug.
+>- **master** : reflète le code en production. Personne ne doit travailler directement sur cette branch.
 
 # A REORGANISER ICI 
 
