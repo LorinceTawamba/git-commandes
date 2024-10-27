@@ -81,20 +81,25 @@ git remote add origin https://github.com/LorinceTawamba/git-commandes.git
 git push -u origin main
 ```
 
+## Récuperer en local le repository sur Github
+
+```shell
+git clone https://github.com/LorinceTawamba/git-commandes.git chemin/vers/mon_dossier/du_projet/en_local
+```
+
+>[!NOTE]
+>
+>Mon repo est composé d'au moins deux branch.
+>- dev : dédié au développement et résolution de bug.
+>- master : reflète le code en production. Personne ne doit travailler directement sur cette branch.
+
 # A REORGANISER ICI 
 
 
 
-## Récuperer le repo sur Github
 
-```shell
-git clone https://github.com/LorinceTawamba/git-commandes.git chemin/vers/mon_dossier
-```
 
-Mon repo est composé d'au moins deux branch.
 
-dev : dédié au développement et résolution de bug.
-master : reflète le code en production. Personne ne doit travailler directement sur cette branch.
 
 Pour récupérer votre branch dev
 
