@@ -4,12 +4,12 @@
 
 - [Introduction](#Introduction) 
 - [Avoir de l'aide sur une commande](#Avoir-de-laide-sur-une-commande)
-- [Configurations](#Configurations)
+- [Faire les configurations de base](#Faire-les-configurations-de-base)
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 
 ## Introduction 
 
-Pour assurer un bon suivi des versions de votre codes source; Une bonne optimisation Voici les commandes git les plus usuelles pour optimiser le travail collaboratif, améliorer ses performances et booster son code sources.  
+Pour assurer un bon suivi des versions de votre codes source; l'optimisation du travail collaboratif de vos équipes; l'améliorer des performances et booster votre code sources, voici les commandes **git** usuelles. 
 
 ## Avoir de l'aide sur une commande  
 
@@ -27,22 +27,10 @@ git help push
 git help pull
 git help branch
 ```
-
-
-Pour avoir de l'aide sur une commande Ne pas oublier que vous pouvez avoir de l'aide à tout moment pour une commande git spécifiques. 
-
-**Exemple :**
-
-```shell
-git help config
-git help push
-git help pull
-git help branch
-``` 
   
-## Configurations 
+## Faire les configurations de base  
 
-Voici les commandes à utiliser pour effectuer les configuration de base de git sur votre machine.  
+- **Exemple :** 
 
 ```shell
 # Nom d'identification 
@@ -64,6 +52,7 @@ git config --global init.defaultBranch main
 git config --list
 ```
 
+# A REORGANISER ICI 
 
 # Installation projet
 
