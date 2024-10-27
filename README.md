@@ -112,7 +112,7 @@ git branch -a
 
 `*`sur la branche courante.
 
-## Créer une branch
+## Créer une noouvelle branche
 
 ```shell
 # Deux lignes: créer et basculer sur la nouvelle branch
