@@ -9,6 +9,9 @@
 - [Récuperer en local le repository sur Github](#Récuperer-en-local-le-repository-sur-Github) 
 - [Log](#Log) 
 - [Gestion des branches](#Gestion-des-branches)
+- [Mettre à jour le repository local par rapport au repository distant](#Mettre-à-jour-le-repository-local-par-rapport-au-repository-distant)
+- [Éditer l'historique des branches](#Éditer-lhistorique-des-branches)
+- [Fusioner les branches](#Fusioner-les-branches) 
 - [Concepts de base de Markdown](#Concepts-de-base-de-Markdown)
 
 ## Introduction 
@@ -143,18 +146,99 @@ git checkout -b nom_de_ma_branch_nouvelle
 git branch 
 ```
 
+## Mettre à jour le repository local par rapport au repository distant   
 
-
-
-# A REORGANISER ICI 
-
-Pour récupérer votre branch dev
+- **Mettre à jour toutes les branches**
 
 ```shell
-git branch -a
-git checkout origin/dev
-git checkout -b dev origin/dev
-git branch
+git pull
+```
+
+- **Mettre à jour une branche spécifique**
+
+```shell
+git pull origin NOM_DE_MA_BRANCHE
+```
+
+## Éditer l'historique des branches 
+
+>[!NOTE]
+>
+>Ici la fusion se fait de la branche mère vers la branche fille.
+
+```shell
+# Historique des trois derniers commits
+git rebase -i HEAD~3
+```
+
+Ce qui va affichier ceci dans votre éditeur de texte.
+
+```shell
+pick 6cbdbe2 Message du commit 3
+pick 0a75a2d Message du commit 2
+pick da74a4e Message du commit 1
+
+# Rebase b8d6fe1..da74a4e onto b8d6fe1 (3 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+Chaque commit est précédé du mot `pick`, utiliser tous les mots-clés possibles.
+
+* Pour éditer, un commit changer `pick` par `edit` ;
+* Enregistrer et quitter l'éditeur afin de prendre les modifs en compte ;
+* Et suivre les instructions.
+
+Pour valider, les changements utiliser la commande :
+
+```shell
+git rebase NOM_DE_MA_BRANCHE
+```
+
+Dans le cas, ou les commits modifier sont déjà présent sur la branch distante, il faura "forcer"
+
+```shell
+git push --force origin NOM_DE_MA_BRANCHE
+```
+
+## Fusioner les branches 
+
+>[!NOTE]
+>
+>Ici la fusion se fait de la branche fille vers la branche mère.
+
+```shell
+# Se déplacer vers la branche mère
+git checkout NOM_DE_MA_BRANCHE_MERE 
+
+# Faire la fusion de la branche souhaité 
+git merge NOM_DE_MA_BRANCHE
+
+# Transférer les sauvegardes du repository local vers le repository distant     
+git push -u origin NOM_DE_MA_BRANCHE_MERE
+```
+
+- **Exemple:**
+
+```shell
+git checkout main  
+git merge feature/nom-de-ma-fonctionnalite 
+git push -u origin main 
 ```
 
 ## Developpement : Branch dev
@@ -171,6 +255,20 @@ git push origin master
 # Penser à revenir sur dev
 git checkout dev
 ```
+
+## Annuler/Supprimer un fichier avant un commit
+
+>[!NOTE]
+>
+>Supposer que vous venez d’ajouter un fichier à Git avec `git add` et que vous vous apprêtez à le « commiter ». Cependant, vous vous rendez compte que ce fichier est une mauvaise idée et vous voulez annuler votre `git add`.
+>Il est possible de retirer un fichier qui avait été ajouté pour être « commité » en procédant comme suit :
+
+```shell
+git reset HEAD -- nom_du_fichier_a_supprimer
+```
+
+
+
 
 # Principales commandes
 
@@ -255,17 +353,7 @@ git add .
 GIT_AUTHOR_DATE="2015-12-12 08:32 +100" git commit -m "Commit antidaté"
 ```
 
-## Mettre à jour le dépôt local
 
-```shell
-git pull
-```
-
-## Mettre à jour le dépôt local d'une branch spécifique
-
-```shell
-git pull origin MA_BRANCH
-```
 
 ## Envoyer ses commits vers le dépôt distant
 
@@ -366,15 +454,7 @@ git checkout nom_du_fichier
 git restore nom_de_ma_branch
 ```
 
-### Annuler/Supprimer un fichier avant un commit
 
-Supposer que vous venez d’ajouter un fichier à Git avec `git add` et que vous vous apprêtez à le « commiter ». Cependant, vous vous rendez compte que ce fichier est une mauvaise idée et vous voulez annuler votre `git add`.
-
-Il est possible de retirer un fichier qui avait été ajouté pour être « commité » en procédant comme suit :
-
-```shell
-git reset HEAD -- nom_du_fichier_a_supprimer
-```
 
 # Diff
 
@@ -410,56 +490,7 @@ git add mon_fichier
 git commit --amend
 ```
 
-## Éditer l'historique avec rebase
 
-```shell
-# Historique des trois derniers commits
-git rebase -i HEAD~3
-```
-
-Ce qui va affichier ceci dans votre éditeur de texte.
-
-```shell
-pick 6cbdbe2 Message du commit 3
-pick 0a75a2d Message du commit 2
-pick da74a4e Message du commit 1
-
-# Rebase b8d6fe1..da74a4e onto b8d6fe1 (3 commands)
-#
-# Commands:
-# p, pick = use commit
-# r, reword = use commit, but edit the commit message
-# e, edit = use commit, but stop for amending
-# s, squash = use commit, but meld into previous commit
-# f, fixup = like "squash", but discard this commit's log message
-# x, exec = run command (the rest of the line) using shell
-# d, drop = remove commit
-#
-# These lines can be re-ordered; they are executed from top to bottom.
-#
-# If you remove a line here THAT COMMIT WILL BE LOST.
-#
-# However, if you remove everything, the rebase will be aborted.
-#
-# Note that empty commits are commented out
-```
-
-Chaque commit est précédé du mot `pick`, utiliser tous les mots-clés possibles.
-
-* Pour éditer, un commit changer `pick` par `edit` ;
-* Enregistrer et quitter l'éditeur afin de prendre les modifs en compte ;
-* Et suivre les instructions.
-
-Pour valider, les changements utiliser la commande :
-
-```shell
-git rebase NOM_DE_MA_BRANCH
-```
-
-Dans le cas, ou les commits modifier sont déjà présent sur la branch distante, il faura "forcer"
-
-```shell
-git push --force origin NOM_DE_MA_BRANCH
 ```
 
 
