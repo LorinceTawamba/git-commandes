@@ -41,7 +41,7 @@ git help branch
 
 ```shell
 # Nom d'identification 
-git config --global user.name "LorinceTawamba"
+git config --global user.name "Lorince Tawamba"
 
 # Email d'identification
 git config --global user.email "lorince.tawamba@gmail.com"
