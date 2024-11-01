@@ -127,7 +127,7 @@ git log --oneline --graph --decorate nom_du_fichier
 - **Créer une nouvelle branche**
 
 ```shell
-git branch nom_de_ma_branch_nouvelle
+git branch nom_de_ma_nouvelle_branche
 ```
 
 - **Se déplacer vers une branche** 
@@ -137,7 +137,7 @@ git branch nom_de_ma_branch_nouvelle
 git checkout nom_de_ma_branche
 
 # Pour une branche non existante (création et déplacement)
-git checkout -b nom_de_ma_branch_nouvelle
+git checkout -b nom_de_ma_nouvelle_branche
 ```
 
 - **Lister toutes les branches disponibles dans le repository** 
